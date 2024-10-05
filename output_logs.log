@@ -1,0 +1,174 @@
+2024-09-24 15:35:51,008 
+
+
+2024-09-24 15:35:51,008 
+****************** Logging Started ******************
+2024-09-24 15:36:31,301   Input Dataset Path : ./datasets/astronomy_questions_small.xlsx
+2024-09-24 15:36:31,837   Input Dataset has 3 records and 2 columns.
+2024-09-24 15:36:31,837   Creating LLM based QA object and HF Pipeline ...
+2024-09-24 15:36:31,837 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 15:36:32,292 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-09-24 15:36:33,077 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 15:36:48,175 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/generation_config.json HTTP/11" 200 0
+2024-09-24 15:36:48,850 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 15:37:45,080 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/generation_config.json HTTP/11" 200 0
+2024-09-24 15:37:45,678 Using stabilityai/stablelm-zephyr-3b Chat LLM Model for Question Answering Task.
+2024-09-24 15:37:45,709 Generation Params : {'max_new_tokens': 360, 'temperature': 0.01, 'do_sample': True, 'repetition_penalty': 1.5, 'pad_token_id': 0, 'eos_token_id': 0, 'bos_token_id': 0}
+2024-09-24 15:37:45,787   Done.
+2024-09-24 15:37:45,787   Using Model : stabilityai/stablelm-zephyr-3b
+2024-09-24 15:37:45,787   Batch Processing Input Dataset ...
+2024-09-24 15:49:21,474   Done. Time Taken : 695.687 secs.
+2024-09-24 15:49:21,506   Current MLFlow tracking uri: file:///C:/Users/anubhav.sarkar/Documents/QA_Tracking_MLFlow/mlruns
+2024-09-24 15:49:21,696   Generating Model Signature ...
+2024-09-24 15:50:20,032   inputs: 
+  [string (required)]
+outputs: 
+  [string (required)]
+params: 
+  ['max_new_tokens': long (default: 30), 'temperature': double (default: 0.01)]
+
+2024-09-24 15:50:20,049   Done.
+2024-09-24 15:50:20,741 Popen(['git', 'version'], cwd=C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow, stdin=None, shell=False, universal_newlines=False)
+2024-09-24 15:50:20,985 Popen(['git', 'version'], cwd=C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow, stdin=None, shell=False, universal_newlines=False)
+2024-09-24 15:50:21,267   Extracting Model Info ...
+2024-09-24 15:50:55,311 Resetting dropped connection: huggingface.co
+2024-09-24 15:50:56,235 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/README.md HTTP/11" 200 0
+2024-09-24 15:50:56,614 https://huggingface.co:443 "GET /api/models/stabilityai/stablelm-zephyr-3b/tree/main?recursive=True&expand=False HTTP/11" 200 1270
+2024-09-24 15:50:56,893 https://huggingface.co:443 "HEAD /stabilityai/stablelm-zephyr-3b/resolve/main/LICENSE.md HTTP/11" 200 0
+2024-09-24 15:51:44,831   Done. Time taken : 83.557 secs.
+2024-09-24 15:51:44,839   Evaluating Results ...
+2024-09-24 15:51:49,689 matplotlib data path: C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow\llmops_env\Lib\site-packages\matplotlib\mpl-data
+2024-09-24 15:51:49,705 CONFIGDIR=C:\Users\anubhav.sarkar\.matplotlib
+2024-09-24 15:51:49,705 interactive is False
+2024-09-24 15:51:49,705 platform is win32
+2024-09-24 15:51:49,784 CACHEDIR=C:\Users\anubhav.sarkar\.matplotlib
+2024-09-24 15:51:49,784 Using fontManager instance from C:\Users\anubhav.sarkar\.matplotlib\fontlist-v390.json
+2024-09-24 15:53:25,494 PyTorch version 2.4.1 available.
+2024-09-24 15:53:26,377 Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-09-24 15:53:27,300 https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/evaluate-measurement/toxicity/evaluate-measurement/toxicity.py HTTP/11" 404 0
+2024-09-24 15:53:27,300 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 15:53:28,166 https://huggingface.co:443 "HEAD /spaces/evaluate-measurement/toxicity/resolve/v0.4.3/toxicity.py HTTP/11" 404 0
+2024-09-24 15:53:28,166 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 15:53:28,957 https://huggingface.co:443 "HEAD /spaces/evaluate-measurement/toxicity/resolve/main/toxicity.py HTTP/11" 200 0
+2024-09-24 15:53:29,003 Attempting to acquire lock 1572467378560 on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 15:53:29,003 Lock 1572467378560 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 15:53:29,003 Attempting to release lock 1572467378560 on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 15:53:29,003 Lock 1572467378560 released on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 15:53:29,114 Using default facebook/roberta-hate-speech-dynabench-r4-target checkpoint
+2024-09-24 15:53:29,399 https://huggingface.co:443 "HEAD /facebook/roberta-hate-speech-dynabench-r4-target/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 15:53:30,093 Attempting to acquire lock 1573408092528 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:30,093 Lock 1573408092528 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:30,093 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 15:53:31,048 Attempting to release lock 1573408092528 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,048 Lock 1573408092528 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,048 Attempting to acquire lock 1572442226272 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,048 Lock 1572442226272 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,048 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 15:53:31,142 Attempting to release lock 1572442226272 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,142 Lock 1572442226272 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,473 Attempting to acquire lock 1572471277424 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,473 Lock 1572471277424 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,473 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 15:53:31,771 Attempting to release lock 1572471277424 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,771 Lock 1572471277424 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,771 Attempting to acquire lock 1572440375168 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,771 Lock 1572440375168 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:31,771 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 15:53:32,050 Attempting to release lock 1572440375168 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:32,050 Lock 1572440375168 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 15:53:33,808   Done. Time taken : 108.969 secs.
+2024-09-24 15:53:34,050  The Results CSV File getting Tracked is : ./metric_files/stabilityai_stablelm_zephyr_3b_eval_results.csv
+2024-09-24 15:53:34,090   QA Evaluation Process Finished. Time taken : 1063.083 secs.
+2024-09-24 16:07:41,065 
+
+
+2024-09-24 16:07:41,066 
+****************** Logging Started ******************
+2024-09-24 16:07:45,641   Input Dataset Path : ./datasets/astronomy_questions_small.xlsx
+2024-09-24 16:07:46,051   Input Dataset has 3 records and 2 columns.
+2024-09-24 16:07:46,051   Creating LLM based QA object and HF Pipeline ...
+2024-09-24 16:07:46,051 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 16:07:46,468 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-09-24 16:07:46,875 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 16:07:48,895 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/generation_config.json HTTP/11" 200 0
+2024-09-24 16:07:49,193 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 16:07:50,679 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/generation_config.json HTTP/11" 200 0
+2024-09-24 16:07:50,679 Using google/flan-t5-xl LLM Model for Question Answering Task.
+2024-09-24 16:07:50,679 Generation Params : {'max_new_tokens': 512, 'temperature': 0.03, 'repetition_penalty': 1.5, 'pad_token_id': 0, 'eos_token_id': 1, 'bos_token_id': None}
+2024-09-24 16:07:50,679   Done.
+2024-09-24 16:07:50,694   Using Model : google/flan-t5-xl
+2024-09-24 16:07:50,694   Batch Processing Input Dataset ...
+2024-09-24 16:08:24,396   Done. Time Taken : 33.688 secs.
+2024-09-24 16:08:24,396   Current MLFlow tracking uri: file:///C:/Users/anubhav.sarkar/Documents/QA_Tracking_MLFlow/mlruns
+2024-09-24 16:08:24,502   Generating Model Signature ...
+2024-09-24 16:08:32,615   inputs: 
+  [string (required)]
+outputs: 
+  [string (required)]
+params: 
+  ['max_new_tokens': long (default: 30), 'temperature': double (default: 0.01)]
+
+2024-09-24 16:08:32,615   Done.
+2024-09-24 16:08:32,896 Popen(['git', 'version'], cwd=C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow, stdin=None, shell=False, universal_newlines=False)
+2024-09-24 16:08:33,069 Popen(['git', 'version'], cwd=C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow, stdin=None, shell=False, universal_newlines=False)
+2024-09-24 16:08:33,369   Extracting Model Info ...
+2024-09-24 16:09:09,807 https://huggingface.co:443 "HEAD /google/flan-t5-xl/resolve/main/README.md HTTP/11" 200 0
+2024-09-24 16:09:10,153 https://huggingface.co:443 "GET /api/models/google/flan-t5-xl/tree/main?recursive=True&expand=False HTTP/11" 200 3326
+2024-09-24 16:10:01,289   Done. Time taken : 87.919 secs.
+2024-09-24 16:10:01,289   Evaluating Results ...
+2024-09-24 16:10:08,527 matplotlib data path: C:\Users\anubhav.sarkar\Documents\QA_Tracking_MLFlow\llmops_env\Lib\site-packages\matplotlib\mpl-data
+2024-09-24 16:10:08,527 CONFIGDIR=C:\Users\anubhav.sarkar\.matplotlib
+2024-09-24 16:10:08,527 interactive is False
+2024-09-24 16:10:08,527 platform is win32
+2024-09-24 16:10:08,594 CACHEDIR=C:\Users\anubhav.sarkar\.matplotlib
+2024-09-24 16:10:08,594 Using fontManager instance from C:\Users\anubhav.sarkar\.matplotlib\fontlist-v390.json
+2024-09-24 16:10:42,272 PyTorch version 2.4.1 available.
+2024-09-24 16:10:43,183 Starting new HTTPS connection (1): s3.amazonaws.com:443
+2024-09-24 16:10:44,093 https://s3.amazonaws.com:443 "HEAD /datasets.huggingface.co/datasets/metrics/evaluate-measurement/toxicity/evaluate-measurement/toxicity.py HTTP/11" 404 0
+2024-09-24 16:10:44,108 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 16:10:44,486 https://huggingface.co:443 "HEAD /spaces/evaluate-measurement/toxicity/resolve/v0.4.3/toxicity.py HTTP/11" 404 0
+2024-09-24 16:10:44,486 Starting new HTTPS connection (1): huggingface.co:443
+2024-09-24 16:10:45,285 https://huggingface.co:443 "HEAD /spaces/evaluate-measurement/toxicity/resolve/main/toxicity.py HTTP/11" 200 0
+2024-09-24 16:10:45,300 Attempting to acquire lock 2182534923808 on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 16:10:45,316 Lock 2182534923808 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 16:10:45,316 Attempting to release lock 2182534923808 on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 16:10:45,316 Lock 2182534923808 released on C:\Users\anubhav.sarkar\.cache\huggingface\modules\evaluate_modules\metrics\evaluate-measurement--toxicity.lock
+2024-09-24 16:10:45,379 Using default facebook/roberta-hate-speech-dynabench-r4-target checkpoint
+2024-09-24 16:10:45,678 https://huggingface.co:443 "HEAD /facebook/roberta-hate-speech-dynabench-r4-target/resolve/main/config.json HTTP/11" 200 0
+2024-09-24 16:10:46,304 Attempting to acquire lock 2182535658528 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:46,318 Lock 2182535658528 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:46,318 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 16:10:47,198 Attempting to release lock 2182535658528 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,198 Lock 2182535658528 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,198 Attempting to acquire lock 2182413106688 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,198 Lock 2182413106688 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,198 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 16:10:47,245 Attempting to release lock 2182413106688 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,261 Lock 2182413106688 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,526 Attempting to acquire lock 2182413509520 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,526 Lock 2182413509520 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,526 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 16:10:47,668 Attempting to release lock 2182413509520 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,668 Lock 2182413509520 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,668 Attempting to acquire lock 2182410328384 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,684 Lock 2182410328384 acquired on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,684 open file: C:/Users/anubhav.sarkar/.cache/huggingface/metrics/toxicity/default/default_experiment-1-0.arrow
+2024-09-24 16:10:47,809 Attempting to release lock 2182410328384 on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:47,809 Lock 2182410328384 released on C:\Users\anubhav.sarkar\.cache\huggingface\metrics\toxicity\default\default_experiment-1-0.arrow.lock
+2024-09-24 16:10:49,314   Done. Time taken : 48.025 secs.
+2024-09-24 16:10:49,470  The Results CSV File getting Tracked is : ./metric_files/google_flan_t5_xl_eval_results.csv
+2024-09-24 16:10:49,493   QA Evaluation Process Finished. Time taken : 188.427 secs.
+2024-10-04 20:11:23,216 
+
+****************** Logging Started ******************
+2024-10-04 20:11:39,950   Input Dataset Path : 
+2024-10-04 20:11:39,950   Only .csv and .xlsx files are allowed. Input File has . as extension
+2024-10-04 20:11:39,950   Error in Reading Input Dataset. See below.
+2024-10-04 20:11:39,950 
+Only .csv and .xlsx files are allowed. Input File has . as extension
+2024-10-04 20:31:35,987 
+
+****************** Logging Started ******************
+2024-10-04 20:33:10,898 
+
+****************** Logging Started ******************
